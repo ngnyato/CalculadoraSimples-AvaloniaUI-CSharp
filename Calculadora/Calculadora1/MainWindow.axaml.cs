@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -12,8 +13,9 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
 
-
+        if (output == null){
          output = this.FindControl<TextBox>("Display");
+        }
 
 
     }
@@ -22,9 +24,24 @@ public partial class MainWindow : Window
     {
         if (sender is Button b)
         {
-            input += b.Content?.ToString();
+            if (b.Content == "C")
+            {
+                input = "";
+                Debug.WriteLine("igual");
+            }
+            else if (b.Content == "=")
+            {
+                 // Aqui vao os calculos
+                 Debug.WriteLine("resultados");
+                 
+            }
+            else
+            {
+                input += b.Content?.ToString();
+            }
             output.Text = input;
         }
+        
     }
 }
            
