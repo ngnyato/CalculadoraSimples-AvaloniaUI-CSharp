@@ -13,28 +13,28 @@
         <!-- Teclas -->
         <UniformGrid Columns="4" Rows="4" HorizontalAlignment="Center" VerticalAlignment="Center">
             <!-- 1ª linha -->
-            <Button Name="bt1" Content="1" Width="60" Height="60" />
-            <Button Name="bt2" Content="2" Width="60" Height="60" />
-            <Button Name="bt3" Content="3" Width="60" Height="60" />
-            <Button Name="bt+" Content="+" Width="60" Height="60" />
+            <Button Name="Bt1" Content="1" Width="60" Height="60" Click="Btn_Click"  />
+            <Button Name="Bt2" Content="2" Width="60" Height="60" Click="Btn_Click"  />
+            <Button Name="Bt3" Content="3" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="btAdd" Content="+" Width="60" Height="60" Click="Btn_Click" />
 
             <!-- 2ª linha -->
-            <Button Name="bt4" Content="4" Width="60" Height="60"/>
-            <Button Name="bt5" Content="5" Width="60" Height="60"/>
-            <Button Name="bt6" Content="6" Width="60" Height="60" />
-            <Button Name="bt-"  Content="-" Width="60" Height="60" />
+            <Button Name="bt4" Content="4" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="bt5" Content="5" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="bt6" Content="6" Width="60" Height="60"  Click="Btn_Click" />
+            <Button Name="btSub"  Content="-" Width="60" Height="60" Click="Btn_Click"  />
 
             <!-- 3ª linha -->
-            <Button Name="bt7" Content="7" Width="60" Height="60" />
-            <Button Name="bt8" Content="8" Width="60" Height="60" />
-            <Button Name="bt9" Content="9" Width="60" Height="60" />
-            <Button Name="bt/" Content="/" Width="60" Height="60" />
+            <Button Name="bt7" Content="7" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="bt8" Content="8" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="bt9" Content="9" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="btDiv" Content="/" Width="60" Height="60" Click="Btn_Click"  />
 
             <!-- 4ª linha -->
-            <Button Name="btPoint" Content="." Width="60" Height="60" />
-            <Button Name="bt0" Content="0" Width="60" Height="60" />
-            <Button Name="bt=" Content="=" Width="60" Height="60" />
-            <Button Name="btC" Content="C" Width="60" Height="60" />
+            <Button Name="btPoint" Content="." Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="bt0" Content="0" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="btEq" Content="=" Width="60" Height="60" Click="Btn_Click" />
+            <Button Name="btC" Content="C" Width="60" Height="60" Click="Btn_Click" />
         </UniformGrid>
     </StackPanel>
 </Window>
