@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="800"
+        x:Class="Calculadora1.MainWindow"
+        Title="Calculadora1">
+   
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+        <!-- Display -->
+        <TextBox Name="Display" Width="240" Margin="5" FontSize="24" IsReadOnly="True"/>
+
+        <!-- Teclas -->
+        <UniformGrid Columns="4" Rows="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- 1ª linha -->
+            <Button Name="bt1" Content="1" Width="60" Height="60" />
+            <Button Name="bt2" Content="2" Width="60" Height="60" />
+            <Button Name="bt3" Content="3" Width="60" Height="60" />
+            <Button Name="bt+" Content="+" Width="60" Height="60" />
+
+            <!-- 2ª linha -->
+            <Button Name="bt4" Content="4" Width="60" Height="60"/>
+            <Button Name="bt5" Content="5" Width="60" Height="60"/>
+            <Button Name="bt6" Content="6" Width="60" Height="60" />
+            <Button Name="bt-"  Content="-" Width="60" Height="60" />
+
+            <!-- 3ª linha -->
+            <Button Name="bt7" Content="7" Width="60" Height="60" />
+            <Button Name="bt8" Content="8" Width="60" Height="60" />
+            <Button Name="bt9" Content="9" Width="60" Height="60" />
+            <Button Name="bt/" Content="/" Width="60" Height="60" />
+
+            <!-- 4ª linha -->
+            <Button Name="btPoint" Content="." Width="60" Height="60" />
+            <Button Name="bt0" Content="0" Width="60" Height="60" />
+            <Button Name="bt=" Content="=" Width="60" Height="60" />
+            <Button Name="btC" Content="C" Width="60" Height="60" />
+        </UniformGrid>
+    </StackPanel>
+</Window>
