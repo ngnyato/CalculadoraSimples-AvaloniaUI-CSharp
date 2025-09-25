@@ -10,6 +10,10 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
             <!-- Display -->
             <TextBox Name="Display" Width="240" Margin="5" FontSize="24" IsReadOnly="True"/>
+            
+            <Button Content="History" Width="65" Height="30" HorizontalAlignment="Left" 
+                    Margin="05,0,0,0" 
+                    Click="History_onClick"/>
 
             <!-- Teclas -->
             <UniformGrid Columns="4" Rows="5" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -17,7 +21,7 @@
                 <!-- 1ª linha -->
                 <Button Name="Bt1" Content="1" Click="Btn_Click" Height="60" Width="60"
                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                        FontSize="30"/>
+                        FontSize="30"/> 
                 <Button Name="Bt2" Content="2" Click="Btn_Click" Height="60" Width="60"
                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                         FontSize="30"/>
@@ -74,7 +78,11 @@
                 <Button Name="btC" Content="C" Click="Btn_Click" Height="60" Width="60" 
                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
                         FontSize="30"/>
+                <Button Name="btBack" Content="←" Click="Btn_Click" Height="60" Width="60" 
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        FontSize="30"/>
             </UniformGrid>
-
         </StackPanel>
+            
+            
     </Window>
